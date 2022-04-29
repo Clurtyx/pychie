@@ -13,10 +13,10 @@ time.sleep(1)
 while True:
     os.system("lsblk && fdisk -l")
     disk = input("Which disk would you like to install Arch to?: ")
+    if disk == "":
+        print("Please enter an actual drive: ")
     print(disk)
     installDrive = input("Is this your drive? (Y,n): ")
-    if installDrive == "":
-        print("Please enter an actual drive: ")
-    # elif installDrive == "y":
-        # break
+    if installDrive == "y":
+        break
 
