@@ -10,3 +10,5 @@ else:
 print("First, let's get your partitions in order.")
 time.sleep(1)
 os.system("lsblk && fdisk -l")
+disk = input("Which disk would you like to install Arch to?: ")
+os.system("cfdisk " disk)
