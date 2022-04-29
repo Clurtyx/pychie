@@ -10,11 +10,11 @@ if intro == "":
 
 print("First, let's get your partitions in order.")
 time.sleep(1)
-os.system("lsblk && fdisk -l")
-disk = input("Which disk would you like to install Arch to?: ")
 while True:
+    os.system("lsblk && fdisk -l")
+    disk = input("Which disk would you like to install Arch to?: ")
     print(disk)
     installDrive = input("Is this your drive? (Y,n): ")
-    if installDrive == "n":
+    if installDrive == "y":
         break
 
