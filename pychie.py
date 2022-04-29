@@ -17,6 +17,6 @@ while True:
     installDrive = input("Is this your drive? (Y,n): ")
     if installDrive == "":
         print("Please enter an actual drive: ")
-    elif installDrive == "y":
-        break
+    # elif installDrive == "y":
+        # break
 
