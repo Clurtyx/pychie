@@ -15,6 +15,8 @@ while True:
     disk = input("Which disk would you like to install Arch to?: ")
     print(disk)
     installDrive = input("Is this your drive? (Y,n): ")
-    if installDrive == "y":
+    if installDrive == "":
+        print("Please enter an actual drive: ")
+    elif installDrive == "y":
         break
 
